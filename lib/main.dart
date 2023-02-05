@@ -1,6 +1,7 @@
 import 'dart:math' show pi;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animatons/advanced_animation.dart';
 
 // create custom shortcuts same guy
 
@@ -18,13 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(brightness: Brightness.dark),
-      darkTheme: ThemeData(brightness: Brightness.dark),
-      themeMode: ThemeMode.dark,
-      debugShowCheckedModeBanner: false,
-      debugShowMaterialGrid: false,
-      home: const HomePage(),
-    );
+        theme: ThemeData(brightness: Brightness.dark),
+        darkTheme: ThemeData(brightness: Brightness.dark),
+        themeMode: ThemeMode.dark,
+        debugShowCheckedModeBanner: false,
+        debugShowMaterialGrid: false,
+        home: const AdvancedAnimation() //const HomePage(),
+        );
   }
 }
 
